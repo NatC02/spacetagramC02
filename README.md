@@ -62,10 +62,6 @@ To get a local copy up and running follow these simple steps.
 
 <!-- CONTRIBUTING -->
 
-## Acknowledgments
-
-Some of the resources I used or read while building this portfolio.
-
 ### Resources
 
 - [Color Scheme](https://coolors.co/)
