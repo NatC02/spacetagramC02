@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spacetagram</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://s2.googleusercontent.com/s2/favicons?domain=www.nasa.gov"
+    />
+    
+
+    <link rel="icon" type="image/jpg" href="favicon.jpg" />
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- animate css -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+  </head>
+
+  <body>
+    <!-- Loader -->
+    <div class="loader hidden">
+      <svg viewBox="0 0 50 50">
+        <circle class="ring" cx="25" cy="25" r="20"></circle>
+        <circle class="ball" cx="25" cy="5" r="3.5"></circle>
+      </svg>
+    </div>
+
+    <!-- Container -->
+    <section class="flex flex-col">
+      <!-- Navigation -->
+	  <nav class="flex justify-center">
+
+        <!-- Results Nav -->
+        <span id="resultsNav">
+          <button class="clickable mx-2 my-2 bg-white transition duration-150 ease-in-out focus:outline-none rounded text-gray-800 border border-gray-300 px-6 py-2 text-xs" onclick="updateDOM('favorites')">Favorites</button>
+          <button class="clickable mx-2 my-2 bg-white transition duration-150 ease-in-out focus:outline-none rounded text-gray-800 border border-gray-300 px-6 py-2 text-xs" onclick="getNasaPictures()">Load More</button>
+        </span>
+
+        <!-- Favorites Nav -->
+        <span id="favoritesNav">
+          <button class="clickable mx-2 my-2 bg-white transition duration-150 ease-in-out focus:outline-none rounded text-gray-800 border border-gray-300 px-6 py-2 text-xs" onclick="getNasaPictures()">
+            Back to Spacetagram
+		      </button>
+        </span>
+      </nav>
+
+      <!-- Images Container -->
+      <div class="container-cards"></div>
+    </section>
+
+    <!-- Save Confirmation -->
+    <div class="save-confirmed" hidden="true">
+      <h1>ADDED!</h1>
+    </div>
+
+    <!-- Script -->
+    <script src="./script.js"></script>
+  </body>
+</html>
