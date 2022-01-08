@@ -25,7 +25,7 @@
 
 ## Usage
 
-![sephardic-center-demo](./demo-image.png)
+![spacetagramC02-demo](./demo-image.png)
 
 ### Built with the following:
 
